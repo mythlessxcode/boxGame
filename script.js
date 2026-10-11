@@ -58,3 +58,23 @@ upBtn.addEventListener('click', moveUp);
 downBtn.addEventListener('click', moveDown);
 
 
+//moving by keyboard keys
+document.addEventListener('keydown', function (e) {
+    switch (e.key) {
+        case 'ArrowLeft':
+            moveLeft();
+            break;
+
+        case 'ArrowRight':
+            moveRight();
+            break;
+
+        case 'ArrowUp':
+            moveUp();
+            break;
+
+        case 'ArrowDown':
+            moveDown();
+            break;
+    }
+});
